@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviwe skincare website </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-1.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- header starts here --> 
+    <header>
+
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fa-solid fa-bars"></label>
+
+        <a href="#" class="logo">Ntul's Skin Care<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <a href="#products">product</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+            </nav>
+
+            <div class="icons">
+                <a href="#" class="fa-solid fa-heart"></a>
+                <a href="#" class="fa-solid fa-cart-arrow-down" id="cart-icon" onclick="showCart()"><span id="cart-item-count">0</span></a>
+                <a href="#" class="fa-solid fa-user"></a>
+            </div>
+            
+    </header>
+<!-- end of header-->
+
+<!-- home section starts here-->
+
+<section class="home" id="home">
+    
+    <div class="content">
+        <h1>Welcome To</h1>
+        <h2><span>Skin Essentials by Aviwe</span></h2>
+        <a href="#products" class="btn"> shop Now</a>
+    </div>
+</section>
+
+    <!-- end of home section -->
+
+    <!-- About section starts here -->
+
+    <section class="about" id="about">
+<h1 class="heading"> about<span> us </span> </h1>
+
+<div class="row">
+
+    <div class="video-container">
+        <video src="images/Skin Care Product example commercial ( 1080 X 1920 ).mp4" loop autoplay muted></video>
+         <h2> best skincare sellers</h2>
+    </div>
+
+<div class="content">
+    <h2> why choose us?</h2>
+    <p>We are proud to say that our products contain only the finest organic oils and shea butter, with absolutely no chemicals.
+         This not only ensures their suitability for all skin types but also provides a natural, safe and healthy alternative to traditional skincare products.
+    </p>
+    <p>Our founder's passion for promoting well-being extends beyond products, we sought a creative outlet that would allow us to combine a strong foundation in science and mathematics with our passion for natural skincare and indigenous botanicals. In the beauty industry, we find great satisfaction in knowing that we can help others look and naturally feel their best, boosting their confidence. Branding our products and developing them creatively was a great way for us to express our nature.
+    </p>
+    <a href="learn_more.html" class="btn"> learn more</a>
+</div>
+
+</div>
+    </section>
+
+    <!-- end of about section-->
+
+    <!-- icons section starts here -->
+
+    <section class="icons-container"> 
+
+     <div class="icons">
+         <img src="images/icon-1.png" alt="">
+         <div class="info">
+             <h2> free delivery </h2>
+             <span> on all orders</span>
+         </div>
+     </div>
+
+     <!--<div class="icons">
+         <img src="images/icon-2.png" alt="">
+         <div class="info">
+             <h2>10 days return </h2>
+             <span> money back guarantee</span>
+         </div>
+     </div>-->
+
+     <div class="icons">
+         <img src="images/icon-3.png" alt="">
+         <div class="info">
+             <h2>offers and gifts </h2>
+             <span> on all orders</span>
+         </div>
+     </div>
+
+     <div class="icons">
+         <img src="images/icon-4.png" alt="">
+         <div class="info">
+             <h2>secure payments </h2>
+             <span>protected by any Bank</span>
+         </div>
+     </div>
+
+    </section>
+
+    <!-- end of icons section -->
+
+    <!-- Products sections starts here -->
+
+    <section class="products" id="products">
+
+        <h1 class="heading">latest <span> products</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <span class="discount"></span>
+            <div class="image">
+                <img src="/skin-care-products-website-main/images/carrot oil.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="cart-btn" onclick="addToCart('product-1', 'Product 1')">add to cart</a>
+                    <a href="#" class="fa-solid fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Carrot Oil</h3>
+                <div class="price">R120<span> </span></div>
+            </div>
+            </div>
+            <div class="box">
+                <span class="discount"></span>
+            <div class="image">
+                <img src="/skin-care-products-website-main/images/vitamin c Toner.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="cart-btn" onclick="addToCart('product-2', 'Product 2')">add to cart</a>
+                    <a href="#" class="fa-solid fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Vitamin C Toner</h3>
+                <div class="price">R90<span> </span></div>
+            </div>
+            </div>
+
+            <div class="box">
+                <span class="discount"></span>
+            <div class="image">
+                <img src="/skin-care-products-website-main/images/African Black soap.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="cart-btn" onclick="addToCart('product-3', 'Product 3')">add to cart</a>
+                    <a href="#" class="fa-solid fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>African Black Soap</h3>
+                <div class="price">R70<span> </span></div>
+            </div>
+            </div>
+
+            <div class="box">
+                <span class="discount"></span>
+            <div class="image">
+                <img src="/skin-care-products-website-main/images/Whipped shea butter.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="cart-btn" onclick="addToCart('product-4','Product 4')">add to cart</a>
+                    <a href="#" class="fa-solid fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Whipped Shea butter</h3>
+                <div class="price">R150<span></span></div>
+            </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">15% off</span>
+            <div class="image">
+                <img src="/skin-care-products-website-main/images/Home Background.jpg" alt="">
+                <div class="icons">
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="cart-btn" onclick="addToCart('product-5','Product 5')">add to cart</a>
+                    <a href="#" class="fa-solid fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Skin Glow Combo</h3>
+                <div class="price">R370<span>R430</span></div>
+            </div>
+            </div>
+
+            <!-- <div class="box">
+                <span class="discount"></span>
+            <div class="image">
+                <img src="" alt="">
+                <div class="icons">
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="cart-btn" onclick="addToCart('product-6','Product 6')">add to cart</a>
+                    <a href="#" class="fa-solid fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>product-6</h3>
+                <div class="price"><span> </span></div>
+            </div>
+            </div>
+
+            <div class="box">
+                <span class="discount"></span>
+            <div class="image">
+                <img src="" alt="">
+                <div class="icons">
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="cart-btn" onclick="addToCart('product-7','Product7')">add to cart</a>
+                    <a href="#" class="fa-solid fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>product-7</h3>
+                <div class="price"><span> </span></div>
+            </div>
+            </div>
+
+            <div class="box">
+                <span class="discount"></span>
+            <div class="image">
+                <img src="" alt="">
+                <div class="icons">
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="cart-btn" onclick="addToCart('product-8','Product 8')">add to cart</a>
+                    <a href="#" class="fa-solid fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>product-8</h3>
+                <div class="price"><span> </span></div>
+            </div>
+            </div>
+
+            <div class="box">
+                <span class="discount"></span>
+            <div class="image">
+                <img src="" alt="">
+                <div class="icons">
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="cart-btn" onclick="addToCart('product-9','Product 9')">add to cart</a>
+                    <a href="#" class="fa-solid fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>product-9</h3>
+                <div class="price"><span> </span></div>
+            </div>
+            </div>
+
+            <div class="box">
+                <span class="discount"> </span>
+            <div class="image">
+                <img src="" alt="">
+                <div class="icons">
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="cart-btn" onclick="addToCart('product-10','Product 10')">add to cart</a>
+                    <a href="#" class="fa-solid fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>product-10</h3>
+                <div class="price"> <span>  </span></div>
+            </div>
+            </div>
+
+            <div class="box">
+                <span class="discount"> </span>
+            <div class="image">
+                <img src=" " alt="">
+                <div class="icons">
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="cart-btn" onclick="addToCart('product-11','Product 11')">add to cart</a>
+                    <a href="#" class="fa-solid fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>product-11</h3>
+                <div class="price"> <span>  </span></div>
+            </div>
+            </div>
+
+            <div class="box">
+                <span class="discount"></span>
+            <div class="image">
+                <img src="" alt="">
+                <div class="icons">
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="cart-btn" onclick="addToCart('product-12','Product 12')">add to cart</a>
+                    <a href="#" class="fa-solid fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>product-12</h3>
+                <div class="price"><span> </span></div>
+            </div>
+            </div>
+
+            <div class="box">
+                <span class="discount"></span>
+            <div class="image">
+                <img src="" alt="">
+                <div class="icons">
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="cart-btn" onclick="addToCart('product-13','Product 13')">add to cart</a>
+                    <a href="#" class="fa-solid fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>product-13</h3>
+                <div class="price"><span> </span></div>
+            </div>
+            </div>
+             
+            <div class="box">
+                <span class="discount"></span>
+            <div class="image">
+                <img src="" alt="">
+                <div class="icons">
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="cart-btn" onclick="addToCart('product-14',)">add to cart</a>
+                    <a href="#" class="fa-solid fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>product-14</h3>
+                <div class="price"><span> </span></div>
+            </div>
+            </div>
+            <div class="box">
+                <span class="discount"></span>
+            <div class="image">
+                <img src="" alt="">
+                <div class="icons">
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="cart-btn" onclick="addToCart('product-15')">add to cart</a>
+                    <a href="#" class="fa-solid fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>product-15</h3>
+                <div class="price"><span> </span></div>
+            </div>
+            </div>
+            <div class="box">
+                <span class="discount"></span>
+            <div class="image">
+                <img src="" alt="">
+                <div class="icons">
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="cart-btn" onclick="addToCart('product-16')">add to cart</a>
+                    <a href="#" class="fa-solid fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>product-16</h3>
+                <div class="price"><span> </span></div>
+            </div>
+            </div>
+
+            <div class="box">
+                <span class="discount"></span>
+            <div class="image">
+                <img src="" alt="">
+                <div class="icons">
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="cart-btn" onclick="addToCart('product-17')">add to cart</a>
+                    <a href="#" class="fa-solid fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>product-17</h3>
+                <div class="price"><span> </span></div>
+            </div>
+            </div>
+
+            <div class="box">
+                <span class="discount"></span>
+            <div class="image">
+                <img src="" alt="">
+                <div class="icons">
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="cart-btn" onclick="addToCart('product-18')">add to cart</a>
+                    <a href="#" class="fa-solid fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>product-18</h3>
+                <div class="price"><span> </span></div>
+            </div>
+            </div>
+
+            <div class="box">
+                <span class="discount"></span>
+            <div class="image">
+                <img src="" alt="">
+                <div class="icons">
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="cart-btn" onclick="addToCart('product-19')">add to cart</a>
+                    <a href="#" class="fa-solid fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>product-19</h3>
+                <div class="price"><span> </span></div>
+            </div>
+            </div>
+
+            <div class="box">
+                <span class="discount"></span>
+            <div class="image">
+                <img src="" alt="">
+                <div class="icons">
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="cart-btn" onclick="addToCart('product-20')">add to cart</a>
+                    <a href="#" class="fa-solid fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>product-20</h3>
+                <div class="price"><span></span></div>
+            </div>
+            </div>
+
+            <div class="box">
+                <span class="discount"></span>
+            <div class="image">
+                <img src="" alt="">
+                <div class="icons">
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="cart-btn" onclick="addToCart('product-21')">add to cart</a>
+                    <a href="#" class="fa-solid fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>product-21</h3>
+                <div class="price"><span></span></div>
+            </div>
+            </div>
+
+            <div class="box">
+                <span class="discount"></span>
+            <div class="image">
+                <img src="" alt="">
+                <div class="icons">
+                    <a href="#" class="fa-solid fa-heart"></a>
+                    <a href="#" class="cart-btn" onclick="addToCart('product-22')">add to cart</a>
+                    <a href="#" class="fa-solid fa-share"></a>
+                </div>
+            </div>
+            <div class="content">
+                <h3>product-22</h3>
+                <div class="price"><span></span></div>
+            </div>
+            </div>
+
+
+        </div> -->
+    </section>
+
+    <!-- end of products section -->
+
+    <!-- Review section starts here -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading"> customer's <span> review </span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p> This section is for customers to give feedback about your product</p>
+            <div class="user">
+                <img src="images/319750767_493895232837035_3841159222139847012_n.jpg" alt="">
+                <div class="user-info">
+                    <h3> Baxolise Lingani</h3>
+                    <span> happy customer</span>
+                </div>
+            </div>
+            <span class="fa-solid fa-quote-right"></span>
+        </div>
+
+           <!-- <div class="box">
+                <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores laboriosam praesentium enim maiores? Ad repellat voluptates alias facere repudiandae dolor accusamus enim ut odit, aliquam nesciunt eaque nulla dignissimos.</p>
+            <div class="user">
+                <img src="images/pic-2.png" alt="">
+                <div class="user-info">
+                    <h3> alice green</h3>
+                    <span> happy customer</span>
+                </div>
+            </div>
+            <span class="fa-solid fa-quote-right"></span>
+        </div>
+
+            <div class="box">
+                <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti asperiores laboriosam praesentium enim maiores? Ad repellat voluptates alias facere repudiandae dolor accusamus enim ut odit, aliquam nesciunt eaque nulla dignissimos.</p>
+            <div class="user">
+                <img src="images/pic-3.png" alt="">
+                <div class="user-info">
+                    <h3> eric nam</h3>
+                    <span> happy customer</span>
+                </div>
+            </div>
+            <span class="fa-solid fa-quote-right"></span>
+        </div>
+
+
+        </div>-->
+    </section>
+
+    <!-- end of review section -->
+
+    <!-- Contact section starts here -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span> contact </span> us </h1>
+    
+        <div class="row">
+    
+            <form action="https://formspree.io/f/xnqenkje" enctype="multipart/form-data" method="post">
+                <input type="text" name="name" placeholder="name" class="box">
+                <input type="email" name="email" placeholder="email" class="box">
+                <input type="number" name="number" placeholder="number" class="box">
+                <textarea name="message" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+    
+                <!-- Heading for Proof of Payment -->
+                <h2>Proof of Payment</h2>
+    
+                <!-- File Upload Input -->
+                <input type="file" name="fileToUpload" id="fileToUpload" class="box"> 
+    
+                <input type="submit" value="send message" class="btn">
+            </form>
+    
+            <div class="image">
+                <img src="images/skincarefavorites.webp" alt="">
+            </div>
+    
+        </div>
+    </section>
+    
+    
+
+    <!-- end of contact section -->
+
+    <!-- Footer section starts here -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3> quick links</h3>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">products</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+            </div>
+
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#">my account</a>
+                <a href="#">my order</a>
+                <a href="#">my favorite</a>
+                <a href="/make_payment.html">Make Payment</a>
+            </div>
+
+            <div class="box">
+                <h3>locations</h3>
+                <a href="#">South Africa</a>
+
+            </div>
+
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#">+27 66 349 8811</a>
+                <a href="#">aviwessofoyiya@gmail.com</a>
+                <a href="#">Cape Town, South Africa</a>
+                <img src="images/payment.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="credit">created by <span>Aviwe Sofoyiya</span> | all rights reserved </div>
+    </section>
+
+    <!-- end of footer section -->
+    <script src="js/script.js"></script>
+    <script>
+        var cart = {
+            items: []
+        };
+    
+        // Function to handle adding to cart
+        function addToCart(productId, productName) {
+            // Check if the product is already in the cart
+            var existingItem = cart.items.find(item => item.productId === productId);
+    
+            if (existingItem) {
+                existingItem.quantity++;
+            } else {
+                // Add the product to the cart
+                cart.items.push({
+                    productId: productId,
+                    productName: productName,
+                    quantity: 1
+                });
+            }
+    
+            // Update the cart icon
+            updateCartIcon();
+    
+            // Display a notification (optional)
+            alert('Product added to cart!');
+        }
+    
+            // Function to update the cart icon and count
+        function updateCartIcon() {
+            var cartIcon = document.getElementById('cart-icon');
+            var cartItemCount = document.getElementById('cart-item-count');
+            var totalItems = cart.items.reduce((total, item) => total + item.quantity, 0);
+
+                // Update the cart icon with the count
+            cartItemCount.innerText = totalItems > 0 ? totalItems : '';
+        }
+    
+        // Function to show the cart items when the cart icon is clicked
+        function showCart() {
+            var cartItemsContainer = document.getElementById('cart-items');
+    
+            // Clear the previous items
+            cartItemsContainer.innerHTML = '';
+    
+            // Add each item to the cart container
+            cart.items.forEach(item => {
+                var cartItemElement = document.createElement('div');
+                cartItemElement.innerText = `${item.productName} x${item.quantity}`;
+                cartItemsContainer.appendChild(cartItemElement);
+            });
+    
+            // Display the cart items container
+            cartItemsContainer.style.display = 'block';
+        }
+    </script>
+    
+</body>
+</html>
